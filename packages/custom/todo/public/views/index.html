@@ -1,0 +1,11 @@
+<div class="" data-ng-controller="TodoController">
+  <h1> THE BEST TODO LIST IN THE WORLD</h1>
+  <ul>
+    <li ng-repeat="todo in todos">
+      <span ng-bind="todo.title"></span> <span ng-click="delete(todo)">[Delete]</span>
+    </li>
+  </ul>
+  </br>
+  <button ng-click="createTodo()">Create</button>
+</div>
+
